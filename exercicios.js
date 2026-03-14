@@ -1,4 +1,4 @@
-import { produtos } from "../produtos.js";
+import { produtos } from "./produtos.js";
 console.log(produtos)
 
 /* ****************************** INSTRUÇÕES ******************************* 
