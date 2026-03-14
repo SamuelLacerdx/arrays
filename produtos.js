@@ -101,14 +101,14 @@ export let produtos = [
   { id: 100, nome: "Filme de PVC", preco_venda: 6.0, preco_compra: 3.5, estoque: 80, rotatividade: "media", curva_abc: "C" },
 ];
  produtos.push({id: 101, nome: "Agua de coco", preco_venda: 1.59, preco_compra: .80, estoque: 500, rotatividade: "alta", curva_abc: "B"})
+
+ console.log(produtos.length)
 // let desconto = produtos.map ((produto => ({...produto, desconto: produto.preco_venda * 0.9 }))) 
 // console.table(desconto)
 
 
-
-
 // let estoqueBaixo = produtos.filter((produto) => produto.estoque <=50&& produto.curva_abc == "A" && produto.rotatividade =="alta")
-// console.table(estoquebaixo);
+// console.table(estoqueBaixo);
 
 
 // let custoEstoque = produtos.reduce((acumulador, produto) => acumulador + (produto.preco_compra * produto.estoque), 0);
