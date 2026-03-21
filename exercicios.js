@@ -41,8 +41,8 @@ function ListarIDSeNome() {
 // ListarIDSeNome()
 
 // 2- Crie uma função que liste todos os produtos em estoque, de acordo com a curva ABC (A, B ou C) selecionada pelo usuário.
-function listarCurvas() {
-  let curvaABC = produtos.filter((produto) => produto.curva_abc === "C");
+function listarCurvas(curva) {
+  let curvaABC = produtos.filter((produto) => produto.curva_abc === curva);
   console.table(curvaABC);
 }
 // listarCurvas()
@@ -52,7 +52,7 @@ function listarRotatividade() {
   let roatividadeABC = produtos.filter(
     (produto) => produto.rotatividade === "alta",
   );
-  console.table(roatividadeABC);
+  // console.table(roatividadeABC);
 }
 // listarRotatividade()
 
@@ -62,7 +62,7 @@ function listarCurvaRotativida() {
   let curva_rotatividade = produtos.filter(
     (produto) => produto.curva_abc === "B" && produto.rotatividade === "alta",
   );
-  console.table(curva_rotatividade);
+  // console.table(curva_rotatividade);
 }
 // listarCurvaRotativida()
 
@@ -87,15 +87,12 @@ function promocao() {
     .map((produto) => ({ ...produto, desconto: produto.preco_venda * 0.9 }));
   return descontoproduto;
 }
-console.table(promocao());
 
 // 8- Crie uma função que permita ao usuário adicionar um novo produto ao estoque, solicitando as informações necessárias (nome, preço de compra, preço de venda, quantidade em estoque, rotatividade e curva ABC).
 function addProduto(novoProduto) {
   produtos.push(novoProduto);
-  console.log("Cadastro Concluido com Sucesso!");
-  console.table(produtos
-
-  )
+  // console.log("Cadastro Concluido com Sucesso!");
+  // console.table(produtos)
 }
 addProduto({
   id: produtos.length + 1,
@@ -122,5 +119,5 @@ function deleteProdutoID(id){
     let produtoBuscado = produtos.find((produto) => produto.id == id)
     return produtoBuscado
 }
-console.table(deleteProdutoID(48))
+// console.table(deleteProdutoID(48))
 // 10- Crie uma função que permita ao usuário atualizar as informações de um produto existente no estoque, solicitando o id do produto e as novas informações a serem atualizadas.

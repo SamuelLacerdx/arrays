@@ -102,7 +102,7 @@ export let produtos = [
 ];
  produtos.push({id: 101, nome: "Agua de coco", preco_venda: 1.59, preco_compra: .80, estoque: 500, rotatividade: "alta", curva_abc: "B"})
 
- console.log(produtos.length)
+//  console.log(produtos.length)
 // let desconto = produtos.map ((produto => ({...produto, desconto: produto.preco_venda * 0.9 }))) 
 // console.table(desconto)
 
