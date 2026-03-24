@@ -31,7 +31,7 @@ Data da entrega: até 19/03/2026 */
 // ******************************** EXERCÍCIOS *******************************
 
 // 1- Crie uma função que liste todos os id's e os nomes dos produtos em estoque.
-function ListarIDSeNome() {
+export function ListarIDSeNome() {
   let todosIdsE_Nomes = produtos.map((produto) => ({
     id: produto.id,
     nome: produto.nome,
